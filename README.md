@@ -4,7 +4,14 @@ Template for research project folders in the [Laboratory of Experimental Biophys
 
 ## How to use this template
 
-TODO
+This template may be used in the following ways when starting a new project in the LEB:
+
+- Create a new GitHub repository by clicking the `Use this template` button above, then cloning the resulting repo to your local machine
+- Clone the repo by clicking the `Code` button above
+- Download the repo by clicking the `Code` button above and unzip it to a directory of your choosing
+- Manually create the folders and files on your own in a way that mimics this repo
+
+If you are uncertain, then do not hesitate to ask :D
 
 ## Layout
 
