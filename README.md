@@ -64,6 +64,12 @@ Files in this folder serve as templates for creating new files that describe, fo
 - simulations
 - protocols
 
+## Project Master
+
+The [project master](project_master.xlsx) is a file used to track individual contributions to a project. The purpose is to ensure that authorship on projects is handled correctly by documenting each person's contribution to a project.
+
+A project master template is provided in this repository.
+
 ## Guidelines
 
 ### Paths and file locations in scripts
