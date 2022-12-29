@@ -79,20 +79,6 @@ A project master template is provided in this repository.
 
 ## Guidelines
 
-### Paths and file locations in scripts
-
-All scripts and notebooks should assume that they are being run from this root project folder. For example, if your analysis script requires a file `data/experiment_1/my_data.txt`, then the script should use this relative path to the file and not refer to an absolute path.
-
-This guideline helps to ensure that all scripts can run independently of a specific person's file system. A script that tries to load the file `D:\Users\JaneDoe\my-kewl-datazzz\cats.jpg` is unlikely to run without modification on anyone's computer except for Jane's. Instead, the script should load `data\experiment_1\cats.jpg`.
-
-This guideline requires that the project root is in your `PATH` environment variable in your programming language's interpreter. In Python, for example, the folder from which the `python` command is executed is automatically added to `sys.path`. So if your Python code looks like the following, then it should work so long as you launched Python from this directory:
-
-```python
-filename = "data/experiment_1/data.csv"
-with open(filename, "r") as f:
-    # Do stuff here...
-```
-
 ### Code
 
 Guidelines for organizing and running code are in the file [code.md](code.md).
