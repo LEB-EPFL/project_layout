@@ -93,7 +93,7 @@ See [dates.md](dates.md).
 
 ### Publication
 
-TODO
+See [publications.md](publications.md).
 
 ## Acknowledgements
 
