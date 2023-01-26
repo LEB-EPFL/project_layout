@@ -54,13 +54,25 @@ All scripts and notebooks should assume that they are being run from the root pr
 
 This guideline helps to ensure that all scripts can run independently of a specific person's file system. A script that tries to load the file `D:\Users\JaneDoe\my-kewl-datazzz\cats.jpg` is unlikely to run without modification on anyone's computer except for Jane's. Instead, the script should load `data\experiment_1\cats.jpg`.
 
-This guideline requires that the project root is in your `PATH` environment variable in your programming language's interpreter. In Python, for example, the folder from which the `python` command is executed is automatically added to `sys.path`. So if your Python code looks like the following, then it should work so long as you launched Python from this directory:
+This guideline requires that the project root is in your `PATH` environment variable in your programming language's interpreter. In Python, for example, the folder from which the `python` command is executed is automatically added to `sys.path`. So if your Python code looks like the following, then it should work so long as you launched Python from the project root directory:
 
 ```python
 filename = "data/experiment_1/data.csv"
 with open(filename, "r") as f:
     # Do stuff here...
 ```
+
+### VSCode run directory and Jupyter Notebooks
+
+If you use Jupyter Notebooks from within VS Code, then you can configure Jupyter to run from the root directory as follows:
+
+1. Click the `Extensions` icon on the left of the VS Code screen (it looks like four blocks with one block slightly offset from center)
+2. Find `Jupyter` in the list of extensions
+3. Click the gear icon for Jupyter, then `Extension settings`
+4. Scroll down to the setting `Notebook File Root`
+5. Enter the value `${workspaceFolder}` in the text box
+
+After you make this change, you can import Python modules from Jupyter notebooks in any folder using the command `import modules.my_module` in the notebook, replacing `my_module` with your Python module name.
 
 ## Projects that are code only can go in their own repository
 
