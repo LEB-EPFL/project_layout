@@ -95,6 +95,10 @@ See [dates.md](dates.md).
 
 See [publications.md](publications.md).
 
+## Additional Resources
+
+- [Ten Simple Rules for Digital Data Storage](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005097)
+
 ## Acknowledgements
 
 This template was inspired by the following resources:
