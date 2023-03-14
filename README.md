@@ -59,7 +59,7 @@ This folder contains different project reports, such as
 - conference presentations
 - group meeting presentations
 
-### [sandox](sandbox)
+### [sandbox](sandbox)
 
 This is a free-form folder that may contain anything you like. You may structure its contents however you wish. However, any files that eventually support a publication cannot be located within this folder.
 
