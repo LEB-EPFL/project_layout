@@ -13,6 +13,20 @@ This template may be used in the following ways when starting a new project in t
 
 If you are uncertain, then do not hesitate to ask :D
 
+## Data flow
+
+In general, data flows through a project by passing through the following folders:
+
+```mermaid
+flowchart TD
+    data --> experiments/exploration
+    data --> experiments/analysis
+    experiments/analysis --> experiments/figures 
+    
+```
+
+Raw data is stored in the [data](data) folder. Next, scripts in the [experiments/exploration](experiments/exploration) folder are used for intial data exploration and visualization. Once an analysis is ready to be finalized, scripts in the [experiments/analysis](experiments/analysis) folder perform the analysis. Intermediate results are also stored there. Finally, figures are created from the intermediate results by scripts in the [experiments/figures](experiments/figures) folder.
+
 ## Layout
 
 The following folders in this layout are mandatory unless you do not yet have contents for any of them. In this case, the folders may either be empty or simply not present. This is expected in the early days of a project when you may not yet have, for example, any reports or well-established templates.
